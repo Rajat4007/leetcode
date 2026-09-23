@@ -1,6 +1,10 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums, int x) {
+        // Fast I/O optimization
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        
         long long total_sum = 0;
         for (int num : nums) {
             total_sum += num;
